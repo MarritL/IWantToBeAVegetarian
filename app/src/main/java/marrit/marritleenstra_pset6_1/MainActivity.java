@@ -220,7 +220,7 @@ public class MainActivity extends FragmentActivity implements RecipesHelper.Call
                         navigation.getMenu().findItem(R.id.navigation_user).setTitle(mDisplayname);
 
 
-                        //TODO: after turning the screen errors (if already been in other tab)
+                        /*//TODO: after turning the screen errors (if already been in other tab)
                         // on launch the hometab is opened (initiated here, because needs the user data)
                         //mOnStarted = settings.getBoolean(STARTED, false);
                         Log.d(TAG, "isstartedbefore onDataChange is: " + mOnStarted);
@@ -228,12 +228,12 @@ public class MainActivity extends FragmentActivity implements RecipesHelper.Call
                             Log.d(TAG,"in onDataChange if sharedprefs is null");
                             navigation.setSelectedItemId(R.id.navigation_home);
                             mOnStarted = true;
-                        }
+                        }*/
 
-                        /*if (savedInstanceState == null) {
+                        if (savedInstanceState == null) {
                             Log.d(TAG,"in onDataChange if savedInstancestate is null");
                             navigation.setSelectedItemId(R.id.navigation_home);
-                        }*/
+                        }
                     }
 
                     // when data changed set all the community values to 0
